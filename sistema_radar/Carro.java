@@ -1,16 +1,18 @@
+package sistema_radar;
+
 public class Carro {
-    public Integer Ano;
-    public String modelo;
     public String placa;
-    public Integer velocidade;
+    public String modelo;
+    public int ano;
+    public int velocidade;
 
     public void acelerar(){
-        this.velocidade += 5;
+        this.velocidade += 10;
     }
 
     public void frear(){
-        if(this.velocidade > 0) {
-        this.velocidade -=5;
+        if(this.velocidade > 0){
+            this.velocidade -= 10;
+        }
     }
- }
 }

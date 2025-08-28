@@ -1,35 +1,33 @@
+package sistema_radar;
+
 public class Simulacao {
     public static void main(String[] args) {
-        Carro marea = new Carro();
-        marea.velocidade = 0;
-        marea.placa = "CTR12J8";
-        marea.modelo = "Weekend";
-        marea.Ano = 98;
+        System.out.println("Simulação");
+
+        Carro opala = new Carro();
+        opala.ano = 76;
+        opala.modelo = "Comodoro";Z
+        opala.placa = "ACLR300";
+        opala.velocidade = 0;
 
         Radar radar = new Radar();
-        radar.modelo = "pardal";
         radar.limiteVelocidade = 60;
-        radar.localizacao = "Pistao Sul";
+        radar.localizacao = "Pistão Sul";
 
-        marea.acelerar(); // 10
-        marea.acelerar(); // 20
-        marea.acelerar(); // 30
-        marea.acelerar(); // 40
-        marea.acelerar(); // 50
-        marea.acelerar(); // 60
-        marea.acelerar(); // 70
-        marea.acelerar(); // 80
+        radar.avaliarVelocidade(opala);
 
-        radar.avaliarVelocidade(marea);
+        opala.acelerar(); // 10
+        opala.acelerar();
+        opala.acelerar();
+        opala.acelerar();
+        opala.acelerar();
+        opala.acelerar();
+        opala.acelerar(); // 70
 
-        marea.acelerar(); //70
-        radar.avaliarVelocidade(marea);
+        radar.avaliarVelocidade(opala);
 
-        marea.frear();
-        radar.avaliarVelocidade(marea);
-       
-        
+        opala.frear(); // 60
 
-
+        radar.avaliarVelocidade(opala);
     }
 }
