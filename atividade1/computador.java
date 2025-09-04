@@ -15,7 +15,7 @@ public class computador {
 
     }
 
-    public int getmemoriaram(){
+    public Integer getmemoriaram(){
         return memoriaram;
     }
 
@@ -23,7 +23,7 @@ public class computador {
         this.memoriaram = memoriaram;
     }
 
-    public int getssd(){
+    public Integer getssd(){
         return ssd;
     }
 
