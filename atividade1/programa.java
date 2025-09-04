@@ -1,13 +1,13 @@
 package atividade1;
 
-public class programa {
-    public Integer memoriaRamAlocada;
-    public Integer ssdocupado;
-    public Integer nucleos;
-    public Integer qO;
+private class programa {
+    private Integer memoriaRamAlocada;
+    private Integer ssdocupado;
+    private Integer nucleos;
+    private Integer qO;
 
 
-public programa(Integer memoriaRamAlocada, Integer ssdocupado, Integer nucleos, Integer qO){
+private programa(Integer memoriaRamAlocada, Integer ssdocupado, Integer nucleos, Integer qO){
     this.memoriaRamAlocada = memoriaRamAlocada;
     this.ssdocupado = ssdocupado;
     this.nucleos = nucleos;
