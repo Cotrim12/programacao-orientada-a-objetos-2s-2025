@@ -1,27 +1,35 @@
-package atividade1;
-
 public class Programa {
-    private Integer memoriaRamAlocada;
-    private Integer ssdOcupado;
-    private Integer nucleos;
-    private Integer qO;
+    private int memoriaRAMAlocada;
+    private int SSDOcupado;
+    private int quantidadeOperacoes;
 
-    public Programa(Integer memoriaRamAlocada, Integer ssdOcupado, Integer nucleos, Integer qO) {
-        this.memoriaRamAlocada = memoriaRamAlocada;
-        this.ssdOcupado = ssdOcupado;
-        this.nucleos = nucleos;
-        this.qO = qO;
+    public Programa(int memoriaRAMAlocada, int SSDOcupado, int quantidadeOperacoes) {
+        this.memoriaRAMAlocada = memoriaRAMAlocada;
+        this.SSDOcupado = SSDOcupado;
+        this.quantidadeOperacoes = quantidadeOperacoes;
     }
 
-    public int getmemoriaRamAlocada(){ return memoriaRamAlocada; }
-    public void setmemoriaRamAlocada(Integer memoriaRamAlocada){ this.memoriaRamAlocada = memoriaRamAlocada; }
+    public int getMemoriaRAMAlocada() {
+        return memoriaRAMAlocada;
+    }
 
-    public int getssdOcupado(){ return ssdOcupado; }
-    public void setssdOcupado(Integer ssdOcupado){ this.ssdOcupado = ssdOcupado; }
+    public void setMemoriaRAMAlocada(int memoriaRAMAlocada) {
+        this.memoriaRAMAlocada = memoriaRAMAlocada;
+    }
 
-    public Integer getNucleos(){ return nucleos; }
-    public void setNucleos(Integer nucleos){ this.nucleos = nucleos; }
+    public int getSSDOcupado() {
+        return SSDOcupado;
+    }
 
-    public Integer getqO(){ return qO; }
-    public void setqO(Integer qO){ this.qO = qO; }
+    public void setSSDOcupado(int SSDOcupado) {
+        this.SSDOcupado = SSDOcupado;
+    }
+
+    public int getQuantidadeOperacoes() {
+        return quantidadeOperacoes;
+    }
+
+    public void setQuantidadeOperacoes(int quantidadeOperacoes) {
+        this.quantidadeOperacoes = quantidadeOperacoes;
+    }
 }

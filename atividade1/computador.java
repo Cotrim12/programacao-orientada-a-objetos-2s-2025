@@ -1,27 +1,45 @@
-package atividade1;
-
 public class Computador {
-    private Integer memoriaram;
-    private Integer ssd;
-    private Integer nucleos;
-    private float oPS;
+    private int memoriaRAM;
+    private int SSD;
+    private int nucleos;
+    private float operacoesPorSegundo;
 
-    public Computador(Integer memoriaram, Integer ssd, Integer nucleos, float oPS) {
-        this.memoriaram = memoriaram;
-        this.ssd = ssd;
+    public Computador(int memoriaRAM, int SSD, int nucleos, float operacoesPorSegundo) {
+        this.memoriaRAM = memoriaRAM;
+        this.SSD = SSD;
         this.nucleos = nucleos;
-        this.oPS = oPS;
+        this.operacoesPorSegundo = operacoesPorSegundo;
     }
 
-    public Integer getmemoriaram(){ return memoriaram; }
-    public void setmemoriaram(Integer memoriaram){ this.memoriaram = memoriaram; }
+    public int getMemoriaRAM() {
+        return memoriaRAM;
+    }
 
-    public Integer getssd(){ return ssd; }
-    public void setssd(Integer ssd){ this.ssd = ssd; }
+    public void setMemoriaRAM(int memoriaRAM) {
+        this.memoriaRAM = memoriaRAM;
+    }
 
-    public Integer getnucleos(){ return nucleos; }
-    public void setnucleos(Integer nucleos){ this.nucleos = nucleos; }
+    public int getSSD() {
+        return SSD;
+    }
 
-    public float getOPS(){ return oPS; }
-    public void setOPS(float oPS){ this.oPS = oPS; }
+    public void setSSD(int SSD) {
+        this.SSD = SSD;
+    }
+
+    public int getNucleos() {
+        return nucleos;
+    }
+
+    public void setNucleos(int nucleos) {
+        this.nucleos = nucleos;
+    }
+
+    public float getOperacoesPorSegundo() {
+        return operacoesPorSegundo;
+    }
+
+    public void setOperacoesPorSegundo(float operacoesPorSegundo) {
+        this.operacoesPorSegundo = operacoesPorSegundo;
+    }
 }

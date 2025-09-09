@@ -1,16 +1,19 @@
-package atividade1;
-
 public class Main {
     public static void main(String[] args) {
-        Computador pc = new Computador(16, 500, 4, 2.5f);
-        SistemaOperacional so = new SistemaOperacional(pc);
+        Computador comp = new Computador(16, 500, 4, 2.5f);
+        SistemaOperacional so = new SistemaOperacional(comp);
 
-        Programa p1 = new Programa(8, 200, 2, 5000);   // Deve rodar com sucesso
-        Programa p2 = new Programa(20, 200, 2, 5000);  // Erro de RAM
-        Programa p3 = new Programa(8, 600, 2, 5000);   // Erro de SSD
+        Programa progSucesso = new Programa(8, 200, 1000);
+        Programa progErroSSD = new Programa(8, 600, 1000); // SSD ocupado maior que disponível
+        Programa progErroRAM = new Programa(20, 200, 1000); // RAM alocada maior que disponível
 
-        so.executarPrograma(p1);
-        so.executarPrograma(p2);
-        so.executarPrograma(p3);
+        System.out.println("\nTeste de execução com sucesso:");
+        so.executarPrograma(progSucesso, true);
+
+        System.out.println("\nTeste de falha na instalação (SSD):");
+        so.executarPrograma(progErroSSD, true);
+
+        System.out.println("\nTeste de falha na execução (RAM):");
+        so.executarPrograma(progErroRAM, true);
     }
 }
