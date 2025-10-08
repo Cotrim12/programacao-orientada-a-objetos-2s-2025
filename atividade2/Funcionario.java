@@ -1,12 +1,22 @@
 public class Funcionario extends Pessoa {
-    private String Cargo;
+    private String cargo;
 
-    public Funcionario(String Nome, String Email, String Cargo) {
-        super(Nome, Email);
-        this.Cargo = Cargo;
+    public Funcionario(String nome, String email, String cargo) {
+        super(nome, email);
+        this.cargo = cargo;
     }
 
-    public void exibirInfo(){
-        System.out.println("Funcionario: " + Nome + ",Email :" + Email + ", Cargo: " + Cargo);
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public void exibirInfo() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Cargo: " + cargo);
     }
 }

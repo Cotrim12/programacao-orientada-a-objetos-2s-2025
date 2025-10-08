@@ -1,12 +1,22 @@
 public class Livro extends Material {
-    private String Edicao;
+    private String autor;
 
-    public Livro(String Titulo, Integer anoPublicacao, String Edicao) {
-        super(Titulo, anoPublicacao);
-        this.Edicao = Edicao;
+    public Livro(String titulo, Integer anoPublicacao, String autor) {
+        super(titulo, anoPublicacao);
+        this.autor = autor;
     }
 
-    public void Descricao() {
-        System.out.println("Livro: " + titulo + ", Ano: " + anoPublicacao + ", Edição: " + edicao);
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public void descricao() {
+        System.out.println("Título: " + getTitulo());
+        System.out.println("Ano de Publicação: " + getAnoPublicacao());
+        System.out.println("Autor: " + autor);
     }
 }

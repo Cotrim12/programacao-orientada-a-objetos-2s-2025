@@ -1,12 +1,22 @@
 public class Usuario extends Pessoa {
-    private Integer Matricula;
+    private Integer matricula;
 
-    public Usuario(String Nome, String Email, Integer Matricula) {
-        super(Nome, Email);
-        this.Matricula = Matricula;
+    public Usuario(String nome, String email, Integer matricula) {
+        super(nome, email);
+        this.matricula = matricula;
     }
 
-    public void exibirInfo(){
-        System.out.println("Usuario: " + Nome + ", Email " + Email + ", Matricula: " + Matricula);
+    public Integer getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(Integer matricula) {
+        this.matricula = matricula;
+    }
+
+    public void exibirInfo() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Matrícula: " + matricula);
     }
 }
