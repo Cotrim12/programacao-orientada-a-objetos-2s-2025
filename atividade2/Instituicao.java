@@ -1,15 +1,17 @@
-public class Instituicao extends TomadorEmprestimo {
+package model;
+
+import interfaces.TomadorEmprestimo;
+
+public class Instituicao implements TomadorEmprestimo{
     private String nome;
     private String cnpj;
-    private String cidade;
-
+    private String cidade; 
 
     public Instituicao(String nome, String cnpj, String cidade) {
         this.nome = nome;
         this.cnpj = cnpj;
         this.cidade = cidade;
     }
-
 
     public String getNome() {
         return this.nome;
@@ -40,6 +42,4 @@ public class Instituicao extends TomadorEmprestimo {
         System.out.println("CNPJ: " + this.cnpj);
         System.out.println("Cidade: " + this.cidade);
     }
-    
-    
 }
